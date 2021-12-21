@@ -61,6 +61,7 @@ app.post("/", function (req, res) {
         }
 
         response.on("data", function (data) {
+             //here json will be converted to js objects using parse
             console.log(JSON.parse(data));
         })
     })
